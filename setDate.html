@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetDate() method</title>
+</head>
+
+<body>
+    <h2>In here we will use setDate() method</h2>
+
+    <script>
+        const day = new Date();
+        //for setting fullyear
+        day.setFullYear(2020);
+        document.write(`${day}<br>`)
+        //to set months
+        day.setMonth(1); //0-11
+        document.write(`${day}<br>`)
+        //to set date
+        day.setDate(20) //1-31
+        document.write(`${day}<br>`)
+        //to set hours
+        day.setHours(12) //0-23
+        document.write(`${day}<br>`)
+        //to set minutes
+        day.setMinutes(27) //0-59
+        document.write(`${day}<br>`)
+
+        
+
+
+
+    </script>
+
+
+</body>
+
+</html>

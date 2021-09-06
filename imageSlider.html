@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image SLider</title>
+    <style>
+        .container {
+            height: 350px;
+            width: 700px;
+            margin: auto;
+            position: relative;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .left {
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .right {
+            position: absolute;
+            top: 50%;
+            right: 5%;
+            border-radius: 3px 0 0 3px;
+
+        }
+
+        .left,
+        .right {
+            cursor: pointer;
+            color: black;
+            font-weight: bolder;
+            font-size: 20px;
+            transition: 0.6s ease;
+            user-select: none;
+
+        }
+
+        .left:hover,
+        .right:hover {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" onmouseover="stops()" onmouseout="starts()">
+        <img src="./images/ash.JPG" alt="pic1" id="image">
+        <button class="left" onclick="prev()" id="previous">&lt;</button>
+        <button class="right" onclick="next()" id="next">&gt;</button>
+
+    </div>
+
+    <script src="imageSlider.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number method</title>
+</head>
+<body>
+    <script>
+        //number
+        const x=15.675623
+        document.write(x.toFixed(2))
+        document.write('<br>')
+        document.write(x.toPrecision(3)) //jati number xa teti ota print hunxa
+        //to change numcer to string
+        document.write('<br>')
+        const y=x.toString();
+        document.write(typeof(y))
+        document.write('<br>')
+
+        document.write(typeof(x))
+
+        //to convert string to number
+        //Number(), parseInt(),parsefloat()
+        document.write('<br>')
+
+        const a=Number("25");
+        document.write(typeof(a))
+        document.write('<br>')
+
+        document.write(parseInt("30.45"))
+        document.write('<br>')
+
+        document.write(parseFloat("30.45"))
+        document.write('<br>')
+
+
+
+        document.write(parseInt("hello"))
+        document.write('<br>')
+        const E=parseInt("25")
+        document.write(typeof(E))
+
+
+
+    </script>
+</body>
+</html>

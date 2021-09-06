@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch Case</title>
+</head>
+<body>
+
+    
+        <h2> Basic syntax of switch case</h2>
+        <pre>
+            switch(expression){
+                case n:
+                code to be executed
+                break;
+
+                case n:
+                code to be executed
+                break;
+
+                default:
+                code to be executed
+                break;
+            }
+        </pre>
+    
+
+        <script>
+            //get day
+            switch(new Date().getDay()){
+                    case 0:
+                    document.write("Today is Sunday")
+                    break;
+                    case 1:
+                    document.write("Today is Monday")
+                    break;
+                    case 2:
+                    document.write("Today is Tuesday")
+                    break;
+                    case 3:
+                    document.write("Today is Wednesday")
+                    break;
+                    case 4:
+                    document.write("Today is Thursday")
+                    break;
+                    case 5:
+                    document.write("Today is Friday")
+                    break;
+                    case 6:
+                    document.write("Today is Saturday")
+                    break;
+
+                    default:
+                    document.write('Invalid expression')
+            }
+document.write('<br>')
+
+            //to get months
+            switch(new Date(). getMonth()){
+                    case 0:
+                    document.write("Today is Jan")
+                    break;
+                    case 1:
+                    document.write("Today is Feb")
+                    break;
+                    case 2:
+                    document.write("Today is Mar")
+                    break;
+                    case 3:
+                    document.write("Today is apr")
+                    break;
+                    case 4:
+                    document.write("Today is May")
+                    break;
+                    case 5:
+                    document.write("Today is Jun")
+                    break;
+                    case 6:
+                    document.write("Today is Jul")
+                    break;
+                    case 7:
+                    document.write("Today is Aug")
+                    break;
+                    case 8:
+                    document.write("Today is Sep")
+                    break;
+                    case 9:
+                    document.write("Today is Oct")
+                    break;
+                    case 10:
+                    document.write("Today is Nov")
+                    break;
+                    case 11:
+                    document.write("Today is Dec")
+                    break;
+
+                    default:
+                    document.write('Invalid expression')
+            }
+
+            document.write('<br>');
+            document.write('<br>');
+            document.write('<br>');
+
+
+            // let x=prompt(first number)
+            // let y=prompt(Second number)
+            // let operator=prompt(what you want to do eg +,-,*,%)
+let x=Number(prompt('Enter First number'))
+let y=Number(prompt('Enter Second number'))
+let operator=prompt('what you want to do eg +,-,*,%')
+
+switch (operator)
+    {
+        case '+':
+            document.write("Addition is: " + (x + y));
+            break;
+        case '-':
+            document.write("Subtraction is: " + (x - y));
+            break;           
+        case '*':
+            document.write("Multiplication is: " + (x * y));
+            break;
+        case '%':
+            document.write("Module is: " + (x % y));
+            break;
+        default:
+            document.write("<b> You have entered Wrong operator </b> <br> Please enter Correct operator such as +, -, *, /, %");
+            // document.write("<br> Please enter Correct operator such as +, -, *, /, %");
+    }
+
+
+
+        </script>
+    
+</body>
+</html>

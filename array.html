@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <p>Collection of homogenous data or multple value in the variable </p>
+    <script>
+        const fruits=['mango','orange','apple','papaya']
+        document.write(`${fruits} <br>`)
+        document.write(fruits[3])
+        document.write('<br>')
+        //count the length of the array
+        document.write(fruits.length)
+        document.write('<br>')
+
+        //pop method remove last element of the array
+        fruits.pop()
+        document.write(`${fruits} <br>`)
+        //push method adds new element to the end of array and return new length
+        fruits.push('cherry')
+        document.write(`${fruits} <br>`)
+        //shift method removes the first element of array and return the element
+        fruits.shift()
+        document.write(`${fruits} <br>`)
+        //unshift
+        fruits.unshift('banana')
+        document.write(`${fruits} <br>`)
+        //splice add/removes element from  array in particular place
+        fruits.splice(3,0, "lemon", "grape")
+        // 3 is the position from where an element is started to add
+        // 0 no any array elemnt is removed
+        document.write(`${fruits} <br>`)
+
+        //slice
+        fruits.slice(4,6)
+        document.write(`${fruits} <br>`)
+
+
+
+
+        //sort -> ascending order
+        //Important NOTE: first it checks capital letter then sort and then sort in small letter.meaning C > a or b or c..... so sorting happens with C in first
+        //not applicable for numbers
+        
+        fruits.sort()
+        document.write(`${fruits} <br>`)
+
+        //reverse -> reverse an array value
+        //to get descending order one most always use sort() and then reverse()
+        fruits.reverse()
+        document.write(`${fruits} <br>`)
+
+
+
+        
+
+
+        
+    </script>
+</body>
+</html>

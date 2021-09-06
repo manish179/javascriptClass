@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onload</title>
+    <style>
+        h1{
+           
+         
+           font-size: 10rem;
+           text-align: center;
+           border: 2px solid black;
+           border-radius: 20px;
+           border-color: cyan;
+           color:cadetblue;
+           background-color:darkkhaki;
+
+        }
+    </style>
+</head>
+<body onload="setInterval(demo,1000)">
+<h1 id="result"></h1>
+
+<script>
+    function demo(){
+        document.getElementById('result').innerHTML=new Date().toLocaleTimeString() //result gives time only
+        // document.getElementById('result').innerHTML=new Date().toLocaleDateString() //result gives date only
+        // document.getElementById('result').innerHTML=new Date().toLocaleString() // result gives time and date
+        // document.getElementById('result').innerHTML=new Date().toLocaleString() // result gives all date, time,day 
+
+
+    }
+</script>
+    
+</body>
+</html>

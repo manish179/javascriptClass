@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onmouseup and onmousedown</title>
+</head>
+
+<body>
+    <p id="para" onmousedown="onMousedown()" onmouseup="onMouseup()">
+        <strong>Default</strong> color of text is <b>BLACK</b> <br>
+        When mouse is pressed<strong>(onmousedown) </strong>the color of the text changes into <b>RED</b>.<br>
+        And when the mouse is released<strong>(onmouseup)</strong> the color of text changes to <b>GREEN</b>.
+
+    </p>
+    <h1 id="heading" ondblclick="doubleclick()">Result of double click</h1>
+
+    <script>
+        function onMousedown() {
+            document.getElementById('para').style.color = "red";
+        }
+        function onMouseup() {
+            document.getElementById('para').style.color = "green";
+        }
+        function doubleclick(){
+            document.getElementById('heading').style.color ="Yellow"
+        }
+    </script>
+</body>
+
+</html>

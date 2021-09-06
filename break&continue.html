@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break and Continue</title>
+</head>
+
+<body>
+
+    <script>
+        for (i = 1; i <= 35; i++) {
+            if (i == 20) {
+                break
+            }
+            document.write(`${i} &nbsp;`)
+        }
+        //result 1 2 3 4 5 6........ 19
+
+        document.write('<br>')
+        for (i = 1; i <= 35; i++) {
+            if (i == 20) {
+                continue
+            }
+            document.write(`${i} &nbsp;`)
+        }
+        //result 1 2 3 4 5 6 ...18 19 21 22 23.......35
+
+
+
+        for (i = 35; i >= 20; i--) {
+            if (i == 20) {
+                break
+            }
+            document.write(`${i} <br>`)
+        }
+        //result
+        // 35
+        // 34
+        // 33
+        // 32
+        // .
+        // .
+        // 21
+        document.write('<br>')
+
+
+        //WAP to display even number from 1 to 100 using break statement
+        for (i = 1; i <= 100; i++) {
+            if (i % 2 == 0) {
+                break
+            }
+            i++
+            document.write(`${i} &nbsp`)
+
+        }
+        document.write('<br>')
+
+        //WAP to display odd number from 1 to 100 using continue statement
+
+        for (i = 1; i <= 100; i++) {
+            if (i % 2 == 0) {
+                continue
+            }
+
+            document.write(`${i} &nbsp`)
+
+        }
+        document.write('<br>')
+        document.write('<br>')
+
+
+        //WAP to display prime number from 2 to 100----
+
+        for (let i = 2; i <= 100; i++) {
+            let num = true;
+
+            // looping through 2 to user input number
+            for (let j = 2; j < i; j++) {
+                // console.log('i', i,j)
+                if (i % j == 0) {
+                    num = false;
+                    break;
+                }
+            }
+
+            // if number greater than 1 and not divisible by other numbers
+            if ( num == true) {
+                document.write( ` ${i} &nbsp`)
+            }
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>

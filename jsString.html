@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS String</title>
+</head>
+<body>
+
+    <script>
+        const text="Welcome to JavaScript class to read web programing."
+        document.write(`${text}<br>`)
+        //to count the length of string
+        document.write(text.length)
+        document.write('<br>')
+
+        //find the position string in a string
+        document.write(text.indexOf('to'))
+        document.write('<br>')
+        document.write(text.search('to'))
+
+        //to find the last occurance of repeated string use lastIndexof
+        document.write(text.lastIndexOf('to'))
+        document.write('<br>')
+
+        //to replace a string use replace()
+        document.write(text.replace('JavaScript','React js'))
+        document.write('<br>')
+        document.write(text.replace(/to/gi,'too'))
+        document.write('<br>')
+
+
+        //substring ->small part of sring
+        // slice(start,end), substring(start,end) ,substr(start,length)
+//slice
+        document.write(text.slice(0,21)+'.........')
+        document.write('<br>')
+//substring
+        document.write(text.substring(5,21)+'.........')
+        document.write('<br>')
+//substr
+        document.write(text.substr(5,21)+'.........')
+        document.write('<br>')
+        document.write('<br>')
+        document.write('<br>')
+        document.write('<br>')
+
+//concat() Method
+        const text1="Hi! I'm Manish"
+        const text2="Shrestha"
+        const text3= text1.concat(" ",text2);
+        document.write(text3)
+        document.write('<br>')
+
+        //toUpperCase()
+        document.write(text.toUpperCase());
+        document.write('<br>')
+
+        //toLowerCase()
+        document.write(text.toLowerCase());
+        document.write('<br>')
+
+//chartAt() --> chartAt(index) //indexing starts from 0
+document.write(text.charAt(0));
+document.write('<br>')
+document.write(text.charAt(11));
+document.write('<br>')
+
+//charCodeAt()-->return the unicode of the character at a specified index in a string.
+document.write(text.charCodeAt(0));
+document.write('<br')
+
+
+
+
+//split-->
+let txt="Hi! I'm Manish"
+const myArr=str.split("");
+document.write(myArr.split(""));
+document.write(myArr.charCodeAt(0));
+
+
+
+        
+        
+        //concat, toUpperCase(), toLowerCase(), charAt(), charcodeAt(),split()
+        //githib.com
+        //gitbash download
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

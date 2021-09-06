@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditional statements</title>
+</head>
+<body>
+    <pre>
+        1. if statement
+        2. if....else statement
+        3. if..elseif..else statement
+        4. Switch statement
+
+
+    </pre>
+    
+
+    <script>
+
+        //if statement
+        const x=Number(prompt("Enter the number you want to check odd or even"));
+
+        if(x%2==0){
+            document.write("It is Even number <br>")
+        }
+        else {
+            document.write("It is Odd number <br>")
+        }
+
+        //greeting at the particular time
+        const day = new Date();
+        const hr = day.getHours();
+
+        if(hr>=0 && hr<12) {
+            document.write("Good Morning sir!!");
+        }
+        else if(hr>=12 && hr <=17) {
+            document.write("Good Afternoon sir!!");
+        }
+        else if(hr > 17 && hr <=19) {
+            document.write("good evening");
+        }
+        else {
+            Document.write("Good night!!");
+        }
+    </script>
+</body>
+</html>

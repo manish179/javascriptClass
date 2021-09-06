@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeapYear</title>
+</head>
+<body>
+
+    <pre>
+        OR || x||y
+        AND && x&&y
+        == equal
+        ===identical(value equalj and data type also equal) 12==="12" //not equal
+        !== not equal
+    </pre>
+
+    <script>
+        let year=Number(prompt("Enter an year to check if the number is leap year or not"))
+        if(year%100!= 0 &&year%4==0 || year%400==0){
+            document.write(`${year} is a leap year`)
+        }
+        else {
+            document.write(`${year} is not a leap year`)
+        }
+    </script>
+    
+</body>
+</html>
