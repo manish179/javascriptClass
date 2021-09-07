@@ -4,6 +4,7 @@ let randomImageSource = "diceImage/" + randomDiceImage  //diceImage/dice1.png-di
 let image1 = document.querySelectorAll('img')[0]
 image1.setAttribute("src", randomImageSource) //to change attribute value use setAttribute
 
+
 let randomNumber2 = Math.floor(Math.random() * 6) + 1 //1-6
 let randomDiceImage1 = "dice" + randomNumber2 + ".png" //dice1.png-dice6.png
 let randomImageSource1 = "diceImage/" + randomDiceImage1 //diceImage/dice1.png-diceImage/dice6.png
